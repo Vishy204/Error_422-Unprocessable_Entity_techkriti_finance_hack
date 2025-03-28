@@ -88,8 +88,6 @@ msgpack==1.0.8
 multidict==6.1.0
 multiprocess==0.70.16
 murmurhash==1.0.12
-# Editable install with no version control (my-app==1.0.0)
--e /Users/vishwajithp/flower_learn/my-app
 nbclient==0.10.2
 nbconvert==7.16.5
 nbformat==5.10.4
