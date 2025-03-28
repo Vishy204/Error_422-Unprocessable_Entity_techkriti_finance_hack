@@ -36,7 +36,7 @@ A demo video showcasing the complete workflow is available [here](#) (Upload you
 ## How to Use
 1. Upload the annual report of a company in PDF format.
 2. The system processes the report, retrieves additional data, and generates a financial story.
-3. Compare the generated story with real-world news sentiment analysis.
+3. Gives a comparison of the generated story with real-world news sentiment analysis.
 4. View graphs and insights for better financial understanding.
 
 ## Workflow Image
