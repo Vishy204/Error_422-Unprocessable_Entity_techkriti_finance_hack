@@ -6,7 +6,8 @@ This project is designed to automate financial story generation from company rep
 _**Important:** This system is designed to work for **any company in India** and is **not limited to just three companies as mentioned in the original problem statement.**_
 
 ## Demo Video
-Please wait for 10 min video is uploading 
+Watch the demo video [Please click here to watch the demo video](https://drive.google.com/file/d/14BuVMLgzaNCto0SmQLobXgXmerfZfivg/view?usp=drive_link).
+
 
 ## Workflow Image
 ![Workflow](images/Flowchart.png)
