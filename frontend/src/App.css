@@ -1,0 +1,403 @@
+/* Modern Finance Theme Styles */
+/* Reset and Global Styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Ensure full viewport height and width */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Centered Container */
+.analyzer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.analyzer-title{
+  margin-left: 26rem;;
+}
+
+.analyzer-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .analyzer-container,
+  .analyzer-card {
+    padding: 1rem;
+    width: 95%;
+  }
+}
+
+/* Ensure routes take full height */
+.route-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --primary-color: #1a73e8;
+  --secondary-color: #34d399;
+  --background-dark: #121212;
+  --background-light: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-color: #6366f1;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.app-container {
+  background: linear-gradient(135deg, var(--background-dark) 0%, #0f0f0f 100%);
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(26, 26, 26, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 2rem;
+  flex: 1; /* Ensures brand takes up left space */
+  text-align: left; /* Align brand to the left */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/* Hover Effects */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+/* Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Move content up */
+  min-height: 50vh; /* Full viewport height */
+  text-align: center;
+  padding: 5rem 2rem; /* Adds space from the top */
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  max-width: 800px; /* Restrict width */
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  max-width: 600px; /* Restrict width */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.home-cta {
+  margin-top: 1.5rem;
+}
+
+/* Optional: Adjust button styles */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #1a73e8, #34d399);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+
+/* PDF Analyzer Container */
+/* PDF Analyzer Container */
+.analyzer-container {
+  background: linear-gradient(180deg, var(--background-light), var(--background-dark));
+  width: 90%; /* Increase width */
+  height: auto; /* Adjust height dynamically */
+  padding: 3rem; /* Increase padding for a spacious feel */
+  margin: 0 auto; /* Center it */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analyzer-card {
+  background: rgba(30, 30, 30, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5); /* Deeper shadow for more emphasis */
+  padding: 3rem; /* More padding inside */
+  width: 90%; /* Increase width */
+  min-height: 500px; /* Set a minimum height for a bigger look */
+  max-width: 1200px; /* Limit max width for large screens */
+  font-size: 1rem; /* Increase text size */
+  text-align: left; /* Align text to the left */
+}
+
+/* Ensure section content is also left-aligned */
+.section-content {
+  text-align: left;
+}
+
+/* Ensure Markdown content is left-aligned */
+.markdown-content {
+  text-align: left;
+}
+
+
+.file
+
+/* Section Navigation */
+.section-navigation {
+  background: rgba(40, 40, 40, 0.5);
+  border-radius: 12px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: width 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-button:hover::before {
+  width: 100%;
+}
+
+.nav-button.active {
+  color: white;
+  background: var(--primary-color);
+}
+
+/* Section Content */
+.section-content {
+  background: rgba(40, 40, 40, 0.6);
+  border-radius: 12px;
+  padding: 40px;
+  min-height: 400px;
+}
+
+.flag-container {
+  
+  gap: 30px;
+}
+
+.red-flags, .green-flags {
+  flex: 1;
+  background: rgba(50, 50, 50, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.red-flags:hover, .green-flags:hover {
+  transform: scale(1.02);
+}
+
+.red-flags h3 {
+  color: #ff6b6b;
+  border-bottom-color: #ff6b6b;
+}
+
+.green-flags h3 {
+  color: #4ecdc4;
+  border-bottom-color: #4ecdc4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flag-container {
+    flex-direction: column;
+  }
+}
+
+/* File Input Styling */
+
+.file-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.file-input-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  height: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.file-input-label:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+.file-input-label:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary-color);
+}
+
+.upload-button {
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  color: white;
+  border: none;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  align-items: center;
+  margin-left:28rem;
+}
+
+.upload-button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
